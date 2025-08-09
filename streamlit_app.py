@@ -3,8 +3,8 @@ import pandas as pd
 import joblib
 
 # Load model and encoder
-model = joblib.load('final_menu_profitability_pipeline.pkl')
-le = joblib.load('profitability_label_encoder.pkl')
+model = pickle.load('final_menu_profitability_pipeline.pkl')
+le = pickle.load('profitability_label_encoder.pkl')
 
 # Set page config with your name
 st.set_page_config(
